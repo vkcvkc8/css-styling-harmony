@@ -15,6 +15,7 @@
   height: calc(100vh - 40px);
   position: fixed;
   overflow-y: auto;
+  top: 135px;
 }
 
 .main {

@@ -103,23 +103,18 @@ const Index = () => {
 
   return (
     <div className={styles.container}>
+      <header className={styles.header}>
+          <img src="/lovable-uploads/4cf47779-3379-4ca1-94c6-899d157a8840.png" alt="Logo" className={styles.logo} />
+          <div className={styles.headerRight}>
+            <Navigation />
+            
+          </div>
+        </header>
       <aside className={styles.sidebar}>
         <Sidebar />
       </aside>
       <main className={styles.main}>
-        <header className={styles.header}>
-          <img src="/lovable-uploads/4cf47779-3379-4ca1-94c6-899d157a8840.png" alt="Logo" className={styles.logo} />
-          <div className={styles.headerRight}>
-            <Navigation />
-            <div className={styles.headerIcons}>
-              <Bell size={20} />
-              <MoreHorizontal size={20} />
-              <div className={styles.profilePic}>
-                {/* Add profile picture here */}
-              </div>
-            </div>
-          </div>
-        </header>
+        
         <div className={styles.contentArea}>
           <div className={styles.projectHeader}>
             <div className={styles.projectTitle}>
