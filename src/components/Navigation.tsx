@@ -28,13 +28,6 @@ const Navigation = () => {
           </button>
         ))}
       </nav>
-      <div className={styles.navIcons}>
-        <Bell className={styles.icon} />
-        <MoreHorizontal className={styles.icon} />
-        <div className={styles.profilePic}>
-          <img src="/placeholder.svg" alt="Profile" />
-        </div>
-      </div>
     </div>
   );
 };

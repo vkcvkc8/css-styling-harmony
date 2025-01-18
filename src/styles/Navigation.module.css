@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 12px 24px;
+  padding: 15px 24px;
   background: #F3F2F9;
   border-radius: 24px;
 }
@@ -28,32 +28,4 @@
 .navItemActive {
   background: #2A2626;
   color: #FFFFFF;
-}
-
-.navIcons {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-  color: #2A2626;
-  cursor: pointer;
-}
-
-.profilePic {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: #F3F2F9;
-  border: 2px solid #2A2626;
-}
-
-.profilePic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }

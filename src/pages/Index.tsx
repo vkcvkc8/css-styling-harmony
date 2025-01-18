@@ -102,14 +102,22 @@ const Index = () => {
   const [projectData, setProjectData] = React.useState<ProjectData>(sampleData);
 
   return (
+    <div>
+    <header className={styles.header}>
+    <img src="https://i.ibb.co/nrTWJRP/owelogo.png" alt="Logo" className={styles.logo} />
+    <div className={styles.headerRight}>
+      <Navigation />
+    </div>
+    <div className={styles.navIcons}>
+        <Bell className={styles.icon} />
+        <MoreHorizontal className={styles.icon} />
+        <div className={styles.profilePic}>
+          <img src="/placeholder.svg" alt="Profile" />
+        </div>
+    </div>
+
+  </header>
     <div className={styles.container}>
-      <header className={styles.header}>
-          <img src="/lovable-uploads/4cf47779-3379-4ca1-94c6-899d157a8840.png" alt="Logo" className={styles.logo} />
-          <div className={styles.headerRight}>
-            <Navigation />
-            
-          </div>
-        </header>
       <aside className={styles.sidebar}>
         <Sidebar />
       </aside>
@@ -218,6 +226,7 @@ const Index = () => {
           </div>
         </div>
       </main>
+    </div>
     </div>
   );
 };
