@@ -1,23 +1,59 @@
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px;
+}
+
 .nav {
   display: flex;
-  gap: 32px;
-  margin-bottom: 40px;
+  gap: 8px;
   background: #F3F2F9;
-  padding: 8px;
-  border-radius: 30px;
-  width: fit-content;
+  padding: 4px;
+  border-radius: 24px;
 }
 
 .navItem {
-  padding: 8px 20px;
+  padding: 8px 24px;
   border-radius: 20px;
   color: #2A2626;
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 14px;
+  font-weight: 500;
+  border: none;
+  background: none;
 }
 
 .navItemActive {
   background: #2A2626;
   color: #FFFFFF;
+}
+
+.navIcons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #2A2626;
+  cursor: pointer;
+}
+
+.profilePic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #F3F2F9;
+}
+
+.profilePic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
