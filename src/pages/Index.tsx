@@ -11,11 +11,20 @@ const Index = () => {
       </aside>
       <main className={styles.main}>
         <header className={styles.header}>
-          <Navigation />
+          <img src="/lovable-uploads/4cf47779-3379-4ca1-94c6-899d157a8840.png" alt="Logo" className={styles.logo} />
+          <div className={styles.headerRight}>
+            <Navigation />
+            <div className={styles.profileSection}>
+              <img 
+                src="/placeholder.svg" 
+                alt="Profile" 
+                className={styles.profileImage}
+              />
+            </div>
+          </div>
         </header>
-        <div className="animate-fade">
-          {/* Content will be added based on selected tab */}
-          <h1>Welcome to Your Project Dashboard</h1>
+        <div className={styles.contentArea}>
+          {/* Content will be implemented in next iteration */}
         </div>
       </main>
     </div>

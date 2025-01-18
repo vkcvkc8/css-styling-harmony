@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 40px;
+  background: #1E1E1E;
+  padding: 8px;
+  border-radius: 30px;
+  width: fit-content;
+}
+
+.navItem {
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.navItemActive {
+  background: white;
+  color: #1E1E1E;
+}

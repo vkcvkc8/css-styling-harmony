@@ -17,17 +17,27 @@ const projects: Project[] = [
 ];
 
 const Sidebar = () => {
+  const [activeProject, setActiveProject] = React.useState("13668");
+
   return (
     <div className={styles.searchContainer}>
-      <input
-        type="text"
-        placeholder="Search by project ID..."
-        className={styles.searchInput}
-      />
+      <div style={{ marginBottom: '20px' }}>
+        <h3 style={{ color: 'white', marginBottom: '12px' }}>Project List</h3>
+        <input
+          type="text"
+          placeholder="Search by project ID..."
+          className={styles.searchInput}
+        />
+      </div>
       <div className={styles.projectList}>
         {projects.map((project) => (
-          <div key={project.id} className={styles.projectCard}>
+          <div 
+            key={project.id} 
+            className={`${styles.projectCard} ${activeProject === project.id ? styles.active : ''}`}
+            onClick={() => setActiveProject(project.id)}
+          >
             <div className={styles.projectTitle}>{project.title}</div>
+            <div className={styles.projectId}>OUR {project.id}</div>
             <div className={styles.projectAddress}>{project.address}</div>
           </div>
         ))}
