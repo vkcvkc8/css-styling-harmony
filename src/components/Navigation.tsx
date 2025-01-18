@@ -6,11 +6,11 @@ const Navigation = () => {
   const [activeTab, setActiveTab] = React.useState('general');
 
   const tabs = [
-    { id: 'general', label: 'General' },
-    { id: 'structural', label: 'Structural' },
+    { id: 'general', label: 'General Info' },
+    { id: 'structural', label: 'Structural Info' },
     { id: 'adders', label: 'Adders' },
     { id: 'notes', label: 'Notes' },
-    { id: 'other', label: 'Other' },
+    { id: 'other', label: 'Other Info' },
   ];
 
   return (
